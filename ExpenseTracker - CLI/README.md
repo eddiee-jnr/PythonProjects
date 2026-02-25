@@ -1,9 +1,9 @@
-# Smart Expense Tracker - CLI
-A Python-based command-line application to help users manage their daily finances. This tool allows you to add, update, delete, list, and summarize your expenses, storing all data in a JSON file.
+# Expense Tracker - CLI
+A simple Python-based command-line application to help users manage their daily finances. This tool allows you to add, update, delete, list, and summarize your expenses, storing all data in a JSON file.
 
 ## Features
 * **Add Expenses**: Record amount, category, and description.
-* **View History**: See a full list of all recorded expenses.
+* **View Expenses**: See a full list of all recorded expenses.
 * **Filter by Category**: Narrow down spending (e.g., Food, Transport, School).
 * **Data Persistence**: Saves and loads data from a `JSON` file.
 
