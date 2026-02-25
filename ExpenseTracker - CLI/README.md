@@ -3,7 +3,7 @@ A simple Python-based command-line application to help users manage their daily 
 
 ## Features
 * **Add Expenses**: Record amount, category, and description.
-* **View History**: See a full list of all recorded expenses.
+* **View Expenses**: See a full list of all recorded expenses.
 * **Filter by Category**: Narrow down spending (e.g., Food, Transport, School).
 * **Data Persistence**: Saves and loads data from a `JSON` file.
 
