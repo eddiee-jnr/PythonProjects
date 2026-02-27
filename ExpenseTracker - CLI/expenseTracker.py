@@ -51,14 +51,43 @@ def add_expense():
     save_expenses(my_expenses)
     print("\nSuccess! Expense added.")
 
-# 2. add a function to view expenses nicely and well organised
+# 2. add a function to view expenses nicely and well organised with summary
 def view_expenses():
     print("\n--- Here is your current expense data ---\n")
+    
+
+    if not my_expenses:
+        print("No expenses to show yet!")
+        return
+
+    # Set up our empty buckets for the math summary
+    total_spent = 0
+    category_totals = {}
+
     for items in my_expenses:
+        # 2.1. Print the individual expense
         print(f"Date: {items['date']} | Amount: ${items['price']:.2f} | Category: {items['category']} | Description: {items['description']}")
 
+        # 2.2 Add the price to the grand total
+        total_spent += items['price']
 
-# 6. add to function to delete an expense (optional)
+        # 2.3. Sort the price into the correct category bucket
+        # capitalize it so "food" and "Food" don't create two separate buckets
+        cat = items['category'].capitalize()
+        if cat in category_totals:
+            category_totals[cat] += items['price']
+        else:
+            category_totals[cat] = items['price']
+
+    # 2.4 Print the summary right below the list
+    print("\n-------------------------------")
+    print(f" TOTAL EXPENSES: ${total_spent:.2f}")
+    print("--- Breakdown by Category ---")
+    for cat, amount in category_totals.items():
+        print(f"{cat}: ${amount:.2f}")
+    print("-------------------------------")
+
+# 6. add to function to delete an expense
 def delete_expense():
     print("\n --- Delete an Expense ---")
 

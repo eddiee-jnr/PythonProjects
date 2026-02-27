@@ -24,9 +24,57 @@
         "description": "bolt from class"
     },
     {
-        "date": "2025-05-13",
-        "price": 50000.0,
-        "category": "Investment",
-        "description": "Air-king LLC"
+        "date": "2020-09-09",
+        "price": 400.0,
+        "category": "transport",
+        "description": "kumasi to tarkwa"
+    },
+    {
+        "date": "2023-08-09",
+        "price": 1000.0,
+        "category": "School",
+        "description": "tution fees"
+    },
+    {
+        "date": "2024-07-06",
+        "price": 1250.5,
+        "category": "School",
+        "description": "2nd sem fees"
+    },
+    {
+        "date": "2023-08-07",
+        "price": 250.0,
+        "category": "Utilities",
+        "description": "water biil"
+    },
+    {
+        "date": "2024-09-04",
+        "price": 130.97,
+        "category": "utilities",
+        "description": "electricity bills"
+    },
+    {
+        "date": "2026-14-02",
+        "price": 100.0,
+        "category": "food",
+        "description": "lunch at kfc"
+    },
+    {
+        "date": "2023-04-24",
+        "price": 90.0,
+        "category": "food",
+        "description": "breakfast"
+    },
+    {
+        "date": "2024-06-11",
+        "price": 200.0,
+        "category": "others",
+        "description": "fix nails for babe"
+    },
+    {
+        "date": "2024-05-24",
+        "price": 400.0,
+        "category": "others",
+        "description": "new braids for babe"
     }
 ]
