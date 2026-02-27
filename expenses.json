@@ -4,5 +4,29 @@
         "price": 250.0,
         "category": "others",
         "description": "flower for babe"
+    },
+    {
+        "date": "2026-02-14",
+        "price": 250.0,
+        "category": "Food",
+        "description": "dinner with babe"
+    },
+    {
+        "date": "2020-09-09",
+        "price": 450.0,
+        "category": "Transport",
+        "description": "accra to kumasi"
+    },
+    {
+        "date": "2026-01-12",
+        "price": 30.98,
+        "category": "Transport",
+        "description": "bolt from class"
+    },
+    {
+        "date": "2025-05-13",
+        "price": 50000.0,
+        "category": "Investment",
+        "description": "Air-king LLC"
     }
 ]
