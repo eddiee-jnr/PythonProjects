@@ -36,16 +36,49 @@ def add_students():
     #print the name and ID just added
     print(f"\nSuccess! {name} (ID: {student_id}) has been added.")
 
-# 2. Function to view all students in the database
+# 2. Function to view all students in the database and sort from highest to lowest GPA
 def view_students():
     print("\n-- Student Records --")
     if not students:
         print("No students in the database! Add students.")
         return
 
-    for student_id, details in students.items():
-        print(f"ID: {student_id}, Name: {details['name']}, Program: {details['program']}, GPA: {details['gpa']}")
+# 2.1 Sort the students by GPA in descending order
+    # 2.1 create a list and add the student details to it
+    student_list = []
 
+    for student_id, details in students.items():
+        # pack everything, including the ID, into a single dictionary
+        student_record = {
+            "id": student_id,
+            "name": details['name'],
+            "program": details['program'],
+            "gpa": details['gpa']
+        }
+        student_list.append(student_record)
+
+    # 2.2 perform manual bubble sort(highest to lowest GPA)
+    n = len(student_list)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if student_list[j]['gpa'] < student_list[j+1]['gpa']:
+                #swa them if the left GPA is smalller than the right GPA
+                student_list[j], student_list[j+1] = student_list[j+1], student_list[j]
+
+    # 2.3 print the sorted list
+    for student in student_list:
+        print(f"ID: {student['id']}, Name: {student['name']}, Program: {student['program']}, GPA: {student['gpa']}")
+
+# 3. Function to Search for a student by ID
+def search_student():
+    print("\n-- Search ...")
+    student_id = input("Enter student ID to search: ")
+
+    if student_id in students:
+        details = students[student_id]
+        print(f"ID: {student_id}, Name: {details['name']}, Program: {details['program']}, GPA: {details['gpa']}")
+    else:
+        print("Student not found. Please check the ID and try again.")
 
 # 4. Function to edit student details except ID
 def edit_student():
