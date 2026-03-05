@@ -1,5 +1,5 @@
 # Python Projects
-A collection of simple python mini projects to enhance your Python skills. Explore a collection of beginner-friendly Python projects that can be completed with minimal code. 
+A collection of simple python mini projects to enhance your Python skills. Explore a collection of beginner-friendly Python projects that can be completed with minimal code.
 Perfect for learning the basics and improving your coding skills.
 
 ## Current Projects:
