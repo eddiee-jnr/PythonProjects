@@ -1,0 +1,77 @@
+{
+    "MS05": {
+        "name": "Selina Mahama",
+        "program": "BSc MIS",
+        "gpa": 2.5
+    },
+    "CY02": {
+        "name": "Sarah Jenkins",
+        "program": "BSc Cybersecurity",
+        "gpa": 3.42
+    },
+    "HI01": {
+        "name": "James Maxwell",
+        "program": "BSc Health Informatics",
+        "gpa": 2.95
+    },
+    "SE01": {
+        "name": "Alice Johnson",
+        "program": "BSc Software Engineering",
+        "gpa": 3.8
+    },
+    "CS02": {
+        "name": "Marcus Chen",
+        "program": "BSc Computer Science",
+        "gpa": 3.85
+    },
+    "IT03": {
+        "name": "David Mensah",
+        "program": "BSc Information Technology",
+        "gpa": 2.7
+    },
+    "CY01": {
+        "name": "Diana Prince",
+        "program": "BSc Cybersecurity",
+        "gpa": 3.9
+    },
+    "HI03": {
+        "name": "Priya Patel",
+        "program": "BSc Health Informatics",
+        "gpa": 3.42
+    },
+    "SE03": {
+        "name": "David Turing",
+        "program": "BSc Software Engineering",
+        "gpa": 3.91
+    },
+    "MS013": {
+        "name": "Evan Wright",
+        "program": "BSc MIS",
+        "gpa": 3.5
+    },
+    "CS01": {
+        "name": "Charlie Davis",
+        "program": "BSc Computer Science",
+        "gpa": 4.0
+    },
+    "CY03": {
+        "name": "James O'Connor",
+        "program": "BSc Cybersecurity",
+        "gpa": 3.1
+    },
+    "HI02": {
+        "name": "Sarah Jenkins",
+        "program": "BSc Health Informatics",
+        "gpa": 4.0
+    },
+    "SE02": {
+        "name": "Bob Smith",
+        "program": "BSc Software Engineering",
+        "gpa": 3.2
+    },
+    "IT02": {
+        "name": "Elena Rodriguez",
+        "program": "BSc Information Technology",
+        "gpa": 3.6
+    }
+}

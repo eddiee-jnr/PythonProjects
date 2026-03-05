@@ -1,5 +1,26 @@
+import json
+
+# add and load data from file
+FILE_NAME = "StudentRecordSystem/students.json"
+
 # Main Student List (Student Database)
 students = {}
+
+def load_data():
+    # Tell Python to modify the master database
+    global students
+    try:
+        # open the file and load the JSON data into our dictionary
+        with open(FILE_NAME, 'r') as file:
+            students = json.load(file)
+    except FileNotFoundError:
+        # If the file doesn't exist yet, just start empty
+        students = {}
+
+def save_data():
+    # Open the file in 'write' mode and dump the dictionary into it
+    with open(FILE_NAME, 'w') as file:
+        json.dump(students, file, indent=4)
 
 # 1. Function to add students to the database
 def add_students():
@@ -35,6 +56,7 @@ def add_students():
 
     #print the name and ID just added
     print(f"\nSuccess! {name} (ID: {student_id}) has been added.")
+    save_data() # Save the added students to the databse file
 
 # 2. Function to view all students in the database and sort from highest to lowest GPA
 def view_students():
@@ -110,6 +132,7 @@ def edit_student():
         print(f"\nSuccess! Student ID {student_id} has been updated.")
     else:
         print("Student not found. Please check the ID and try again.")
+    save_data() # Save the updated database after editing
 
 # 5. Function to delete a student from the database
 def delete_student():
@@ -121,6 +144,13 @@ def delete_student():
         print(f"Student ID {student_id} has been deleted.")
     else:
         print("Student not found. Please check the ID and try again.")
+    save_data() # Save the updated database after deletion
+
+
+
+# Load existing data before starting the menu
+load_data()
+
 
 # --- MAIN MENU ---
 while True:
@@ -138,8 +168,8 @@ while True:
         add_students()
     elif choice == '2':
         view_students()
-    # elif choice == '3':
-    #     search_student()
+    elif choice == '3':
+        search_student()
     elif choice == '4':
         edit_student()
     elif choice == '5':
