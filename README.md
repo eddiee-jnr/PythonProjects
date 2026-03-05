@@ -4,6 +4,7 @@ Perfect for learning the basics and improving your coding skills.
 
 ## Current Projects:
 * **Expense Tracker - CLI**: A command-line tool for managing personal finances.
+* **Student Record System**: A CLI application for managing student data using dictionary hashing and algorithmic sorting.
 
 ## Learning Resources
 | S. No. | Name | Link | Type |
