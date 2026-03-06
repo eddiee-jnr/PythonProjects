@@ -175,7 +175,7 @@ while True:
     elif choice == '5':
         delete_student()
     elif choice == '6':
-        print("Shutting down system. Goodbye!")
+        print("Shutting down system!")
         break
     else:
         print("Invalid choice. Please enter 1 - 6.")
