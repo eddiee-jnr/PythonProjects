@@ -1,6 +1,6 @@
 # Import the json module to work with JSON files
 import json
-FILE_NAME = "expenses.json"
+FILE_NAME = "ExpenseTracker - CLI/expenses.json"
 
 # FUNCTION DEFINITIONS:
 # 4. Create a function to save expenses to the JSON file
